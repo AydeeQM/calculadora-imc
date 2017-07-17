@@ -1,4 +1,3 @@
-
 function Calcular(){
     var records = document.getElementById('records');
     var peso = document.getElementById('peso');
@@ -9,3 +8,4 @@ function Calcular(){
     records.innerHTML = resultado;
 
 }
+
