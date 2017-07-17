@@ -1,9 +1,11 @@
-var peso=prompt("ingresa tu peso");
-peso=parseInt(peso);
+function Calcular(){
+    var records = document.getElementById('records');
+    var peso = document.getElementById('peso');
+    peso=parseInt(peso.value);
+    var estatura = document.getElementById('estatura');
+    estatura=parseInt(estatura.value);
+    var resultado = peso/(estatura*estatura);
+    records.innerHTML = resultado;
 
-var tamaño=prompt("Ingresa tu tamaño");
-function calcularImc(){
-	var imc=peso/(tamaño*tamaño);
-document.write(imc);
 }
- calcularImc();
+
